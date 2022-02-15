@@ -8,5 +8,4 @@ Cheat Table for Red Alert 2
 ###### Functions
 1. Money
    - Num+ add 10.000, Shift+Num+ add 100.000
-2. Base Energy Max value Freeze at 10.000 value
-3. Base Energy Drain value Freeze at 10 value
+2. Base Power Freeze at 10.000 max and 10 min values
