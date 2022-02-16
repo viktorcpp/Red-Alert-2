@@ -151,9 +151,11 @@ aobscanmodule( injectEnergyFreeze, Game.exe, 8B 81 D0520000 )
 alloc( newmemEnergyFreeze, 1024, injectEnergyFreeze )
 
 newmemEnergyFreeze:
+    cmp dword [ecx+00000030], #0
+    jg short @f
     mov [ecx+000052D0], #1000
     mov [ecx+000052D4], #10
-    //
+@@:
     mov eax,[ecx+000052D0]
     jmp injectEnergyFreeze+5
 
